@@ -4,9 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npx cypress test",
-    "open": "npx cypress open"
-  },
+   "test": "npx cypress test",
+   "open": "npx cypress open",
+   "test:qauto1": "cypress run --config-file cypress/config/qauto1.json",
+   "test:qauto2": "cypress run --config-file cypress/config/qauto2.json",
+   "test:garage:qauto1": "cypress run --config-file cypress/config/qauto1.json --spec cypress/e2e/garage/Garage.spec.js",
+   "test:garage:qauto2": "cypress run --config-file cypress/config/qauto2.json --spec cypress/e2e/garage/Garage.spec.js"
+}
+
+,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Balambassik/aqa-cypress-2025.git"
@@ -20,6 +26,8 @@
   "homepage": "https://github.com/Balambassik/aqa-cypress-2025#readme",
   "devDependencies": {
     "@faker-js/faker": "^10.1.0",
-    "cypress": "^15.7.1"
+    "cypress": "^15.7.1",
+    "cypress-mochawesome-reporter": "^4.0.2",
+    "mochawesome": "^7.1.4"
   }
 }
