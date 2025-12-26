@@ -1,0 +1,20 @@
+{
+    "e2e": {
+      "baseUrl": "https://qauto2.forstudy.space",
+      "watchForFileChanges": false,
+      "specPattern": "cypress/e2e/**/*.{spec,test}.{js,jsx,ts,tsx}",
+      "experimentalRunAllSpecs": true
+    },
+    "env": {
+      "username": "test_2@gmail.com",
+      "password": "Testtest2"
+    },
+    "reporter": "mochawesome",
+    "reporterOptions": {
+      "reportDir": "cypress/results",
+      "overwrite": false,
+      "html": true,
+      "json": true
+    }
+  }
+  
